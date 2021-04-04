@@ -22,4 +22,4 @@
 
 ```
 
-![UML](uml3.png)
+![UML](uml3.jpg)
