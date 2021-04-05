@@ -30,7 +30,7 @@ describe('testing the user', () => {
 				'basic ' + new Buffer(`${username}:${password}`).toString('base64'),
 			);
 
-		expect(response2.status).toEqual(200);
+		expect(response2.status).toEqual(403);
 	});
 
 	it('handle invalid routes', async () => {
