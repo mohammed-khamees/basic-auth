@@ -13,15 +13,15 @@
 3. `npm i -D jest @code-fellows/supergoose`
 
 - create .env file and added :
-  PORT=3000
-  MONGODB_URI=<% your mongon uri %>
+  - PORT=3000
+  - MONGODB_URI=<% your mongo uri %>
 
 ## Run the code:
 
 - npm start
 - Endpoints:
-  POST /signin return the auth user
-  POST /signup return the new user
+  - POST /signin return the auth user
+  - POST /signup return the new user
 
 **On the `package.json` change the `script` to**
 
