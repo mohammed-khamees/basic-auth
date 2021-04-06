@@ -15,10 +15,11 @@ const getUser = async function (username, password) {
 		if (!user) return new Error('signUp first');
 
 		const valid = await bcrypt.compare(password, user.password);
+
 		if (valid) {
 			return user;
 		} else {
-			return new Error('Invalid User or password');
+			return 'Invalid User or password';
 		}
 	} catch (error) {
 		return new Error(error.message);

@@ -11,6 +11,7 @@ module.exports = async function (req, res, next) {
 		let [username, password] = decodedString.split(':');
 
 		let user = await getUser(username, password);
+		if (typeof user === 'string') return res.status(403).send(user);
 		if (!user.username) return res.status(403).send('Please Sign Up first');
 
 		if (username && password) {
